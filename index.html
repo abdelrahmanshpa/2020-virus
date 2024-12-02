@@ -43,12 +43,12 @@
         }
 
         
-        .content {
-            margin-left: 250px;  
+        .content {                  /*the main text */
+            margin-left: 270px;  
             padding: 20px;
             text-align: right;  
             flex: 1;
-            height: 100vh;
+            height: auto;
 	    width: 80%;
         }
 	
@@ -60,157 +60,39 @@
 	    
         }
 	
-	.image1 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 55%;
-		position: absolute;
-		  margin-top: 344px;
+	
 			
 }
 
-.image1 img {
-  width: 175%; 
-  height: 170%; 
-}
-	.image2 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 55%;
-		position: absolute;
-		  margin-top: 793px;
-			
+.image-container {
+   text-align: center;   
+    margin-bottom: 20px;
 }
 
-.image2 img {
-  width: 170%; 
-  height: 170%; 
+.image-container img {
+     display: block;        
+    margin: 0 auto;        
+    max-width: 500px;      
+    height: auto; 
+    width:5000px;             
 }
-.image3 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 55%;
-		position: absolute;
-		  margin-top: 4095px;
-			}
+	
+				@media (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+    }
 
-.image3 img {
-  width: 163%; 
-  height: 170%; 
+    .content {
+        margin-left: 160px;
+        width: calc(100% - 160px);
+    }
+
+.image-container img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
 }
-.image4 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 55%;
-		position: absolute;
-		  margin-top: 4595px;
-}			
-.image4 img {
-  width: 165%; 
-  height: 170%; 
-}
-.image5 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 55%;
-		position: absolute;
-		  margin-top: 1963px;
-}			
-.image5 img {
-  width: 179%; 
-  height: 170%; 
-}
-				@media all and (max-width: 500px) {
-.sidebar {
-            	width: 110px;
-            	 box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.1);
-          	background-color: #004d99; 
-            	padding-top: 0px;
-           	position: absolute; 
-		top:0;
-		left:0;
-		min-height: 42.2nvh;
-		text-align: right;
-        }
-
-        .content {
-            margin-left:350px; 
-            padding: 20px;
-            text-align: right;  
-            flex: 1;
-            height: 100vh;
-	    width: 300px;
-	   
-	     }
-
-
-
-
-
-.image1 {
-  		 
- 		  margin-top: 10px;
-		  left: 34.4%;
-		position: absolute;
-		  margin-top: 127.4%;
-			
-}
-
-.image1 img {
-  width: 110%; 
-  height: 190%; 
-}
-.image2 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 34.4%;
-		position: absolute;
-		  margin-top: 295%;
-			
-}
-
-.image2 img {
-  width: 105%; 
-  height: 170%; 
-}
-
-.image3 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 34.5%;
-		position: absolute;
-		  margin-top: 1664%;
-			}
-
-.image3 img {
-  width: 100%; 
-  height: 170%; 
-}
-.image4 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 34.5%;
-		position: absolute;
-		  margin-top:1851.6%;
-}			
-.image4 img {
-  width: 110%; 
-  height: 170%; 
-}
-.image5 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 34.6%;
-		position: absolute;
-		  margin-top: 694.2%;
-}			
-.image5 img {
-  width: 110%; 
-  height: 170%; 
-}
-
-
-
 
 
 
@@ -233,21 +115,11 @@
     	</div>
 
 	
-	<div class="image1">
-  	<img src="images/corona.jpeg" alt="a photo of the virus">
-	</div>
-        <div class="image2">
-  	<img src="images/earth.png" alt="a photo of the earth">
-	</div>
-<div class="image3">
-  	<img src="images/antidote.jpg" alt="the antidote">
-	</div>	
-<div class="image4">
-  	<img src="images/lifeaf.jpeg" alt="life after">
-	</div>	
-<div class="image5">
-  	<img src="images/flag.jpeg" alt="egyptian flag with a mask">
-	</div>	
+	
+       
+
+
+
 		<div class="content">
 	<h1 align to right style="color:#004d99; font-size:35px;">البداية</h1>
  	<p>
@@ -257,12 +129,12 @@
 	</h1>
         </p>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+<div class="image-container">
+  	<img src="images/corona.jpeg" alt="a photo of the virus">
+	
+</div>
+
 <br>
 	<h1 align to right style="color:#004d99; font-size:35px;">ما هو فيروس 2020</h1>
 	<p> 
@@ -278,11 +150,9 @@
 	</p>
 	
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+ <div class="image-container">
+  	<img src="images/earth.png" alt="a photo of the earth">
+</div>	
 <br>
 
 
@@ -331,14 +201,9 @@
 	</p>
 	</h1>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="image-container">
+  	<img src="images/flag.jpeg" alt="egyptian flag with a mask">
+</div>	
 <br>	
 
 	<h1 align to right style="font-size: 35px; color:#004d99;">تأثيره على مصر  </h1>
@@ -398,11 +263,9 @@
 	</p>
 	
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="image-container">
+  	<img src="images/antidote.jpg" alt="the antidote">
+</div>	
 <br>
 	
 
@@ -417,11 +280,9 @@
 
 	</h1></p>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="image-container">
+  	<img src="images/lifeaf.jpeg" alt="life after">
+</div>		
 <br>
 
 	<h1 align to right style="font-size: 35px; color:#004d99;">الحياة بعد الجائحة  </h1>	
