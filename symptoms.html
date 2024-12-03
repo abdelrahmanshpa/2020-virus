@@ -2,8 +2,8 @@
 <html lang="ar">
 <head>
 	<title>الاعراض</title>
-<h1 align="center" style="color:#004d99; font-size:35px;">الاعراض</h1>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1 align="right" style="color:#004d99; font-size:35px;">الاعراض</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
 body {
@@ -20,13 +20,13 @@ body {
            	position: absolute; 
 		top:0;
 		left:0;
-		min-height: 42.2vh;
-		text-align: right;
+		min-height: 42.2nvh;
+		text-align: right	
         }
 
         
         .sidebar a {
-            display: block; 
+           display: block; 
             color: white; 
             padding: 15px;
             text-decoration: none; 
@@ -51,27 +51,43 @@ body {
         }
 
 .symp {
-		 margin-left: 250px;  
-            	 padding: 20px;
-           	 text-align: right;  
-          	  flex: 1;
-          	  height: 100vh;
-		  margin-bottom: 0px;
-		  margin-top: 0px;
+		 margin-left: 270px;  
+            padding: 20px;
+            text-align: right;  
+            flex: 1;
+            height: auto;
+	    width: 80%;
 	}
 
-	.image1 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 55%;
-		position: absolute;
-		  margin-top: -150px;
-			
+	.image-container {
+   
+    margin-bottom: 20px;
 }
 
-.image1 img {
-  width: 175%; 
-  height: 170%; 
+.image-container img {
+     display: block;        
+    margin: 0 auto;        
+    max-width: 500px;      
+    height: auto; 
+    width:5000px;             
+}
+	
+				@media (max-width: 768px) {
+    .sidebar {
+        width: 125px;
+    }
+
+    .symp {
+        margin-left: 160px;
+	   
+        width: calc(100% - 50px);
+    }
+
+.image-container img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
 }
 </style>
 </head>
@@ -87,7 +103,14 @@ body {
     	</div>
 
 <div class="symp">
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 	<p>
 	<h1 style="color:#000000; font-size: 30px;">
 
@@ -108,13 +131,16 @@ body {
 	<br>
 	</h1>
 	</p>
-
-</div>
-
-
-<div class="image1">
+<div class="image-container">
 <img src="images/cough.jpg" alt="someone coughing" >
 </div>
+
+
+
+
+</div>
+
+
 
 
 
