@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
 	<title>صانع المحتوى</title>
-<h1 align="center" style="color:#004d99; font-size:35px;">صانع المحتوى</h1>
+<h1 align="right" style="color:#004d99; font-size:35px;">صانع المحتوى</h1>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
@@ -20,13 +20,13 @@ body {
            	position: absolute; 
 		top:0;
 		left:0;
-		min-height: 42.2vh;
+		min-height: 42.2nvh;
 		text-align: right;
         }
 
         
         .sidebar a {
-            display: block; 
+           display: block; 
             color: white; 
             padding: 15px;
             text-decoration: none; 
@@ -51,28 +51,28 @@ body {
         }
 
 .credit {
-		 margin-left: 250px;  
-            	 padding: 20px;
-           	 text-align: right;  
-          	  flex: 1;
-          	  height: 100vh;
-		  margin-bottom: 0px;
-		  margin-top: 0px;
+		margin-left: 270px;  
+            padding: 20px;
+            text-align: right;  
+            flex: 1;
+            height: auto;
+	    width: 80%;
 	}
+			@media (max-width: 768px) {
+    .sidebar {
+        width: 125px;
+    }
 
-	.image1 {
-  		  width: 250px; 
- 		  margin-top: 10px;
-		  left: 55%;
-		position: absolute;
-		  margin-top: -150px;
-			
+    .credit {
+        margin-left: 160px;
+        
+	   
+        width: calc(100% - 50px);
+    }
 }
 
-.image1 img {
-  width: 175%; 
-  height: 170%; 
-}
+
+	
 </style>
 </head>
 <body >
@@ -85,12 +85,15 @@ body {
 	<a href="credit.html">صانع المحتوى</a>
         	
     	</div>
-     <div id="copyright" align="center">
+     <div class="credit" align="center">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
   <h1 style="font-size:30px;">  &copy; 2024 - 2024 AbdElrahman sherif - All Rights Reserved.</h1>
 </div>
-<script>
-(() => {
-    const copyrightElement = document.getElementById("copyright");
-    copyrightElement.innerHTML = "&copy; 2024 - "+new Date().getFullYear()+" AbdElrahman sherif - All Rights Reserved.";
-})();
-</script>
